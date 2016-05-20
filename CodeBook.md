@@ -1,18 +1,15 @@
----
-title: "CodeBook"
----
-
-
+# Code book
 
 This is a Code Book for Getting and Cleaning Data Course Project
---
-# Introduction
+
+
+## Introduction
 The zip file includes data from two datasets, one with 70% of the subjects ('train' data) and another with 30% of the subjects ('test' data). Data is also available in separate sets for each group 'id', 'activity class labels' and 'list of all the features'. 
 All this data combined contains 10299 observations and 563 variables. 
 
 *Data source:*
 http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
---
+
 The R script ```run_analysis.R``` includes code that does the following:
 
 * Downloads the zipfile if it does not exist already in the working directory
@@ -20,7 +17,7 @@ The R script ```run_analysis.R``` includes code that does the following:
 * Imports the data sets corresponding to the training group ```TRAINid```, ```TRAINx```, ```TRAINy``` and 
 test group ```TESTid```, ```TESTx```, ```TESTy```
 
-# Transformations to the original data:
+## Transformations to the original data:
 
 * Renames variable names of each data set with descriptive names
 * Binds the sets of each group into two single data sets ```TRAIN```and ```TEST```
